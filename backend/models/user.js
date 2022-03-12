@@ -28,6 +28,10 @@ const userSchema = new mongoose.Schema({
 	coverImage: Array,
 	friends: Array,
 	requestedTo: Array,
+	isAdmin: {
+		type: Boolean,
+		default: false,
+	},
 	bio: {
 		type: String,
 	},
